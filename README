@@ -1,0 +1,70 @@
+zeno (Zenodotus)
+Comprehensive environment for using and managing documents
+Coded in C++
+
+-------------------------------------------------------------
+Desired Features:
+
+Read PDFs
+Annotate PDFs
+Get data (bibliographic data such as author, year etc.) from PDF Metadata, Google Scholar etc.
+Export bilbiographic data in BibTex format, LibreOffice format? etc.
+Manage library of pdfs
+Search and cite Arxiv (other journals?)
+Share articles and books - p2p, use freenet? retroshare? git?
+Remove digital watermarks prior to sharing
+Share annotations
+Find and communicate with users with similar interests - profiles/workgroups?
+Get the bilbiography from the paper (i.e. the papers etc. that that paper cites, not its own bibliographic data)
+Support different citation styles
+
+-------------------------------------------------------------
+Similar software (for inspiration, possibly code in open source cases):
+
+Mendeley
+Zimwiki (notes)
+Calibre (library management)
+zotero (annotations/metadata)
+zotfile (imports annotations into zotero)
+cb2bib (metadata)
+Docear (annotations, links to notes)
+Retroshare (networking)
+Conquiere (most stuff, though not p2p and dependent on nepomuk)
+Skim (annotations)
+pdf xchange viewer (annotations, networking?)
+
+-------------------------------------------------------------
+Additional Info:
+
+See following threads:
+http://brainstorm.ubuntu.com/idea/29385/
+http://www.reddit.com/r/linux/comments/s2ck9/possible_project_idea_a_free_p2penabled/
+http://www.reddit.com/r/Piracy/comments/rz1b6/the_future_of_casual_piracy/
+
+------------------------------------------------------------- 
+Coding Practices:
+
+Comments should be handled with doxygen ( http://www.stack.nl/~dimitri/doxygen/manual.html ) so that documentation can be generated
+Perhaps try Trello ( https://trello.com/ ) for management/communication.
+
+Possible directory structure:
+/bin/ - stores binaries/executables will be added to .gitignore as these should not be uploaded
+/data/ - stores supporting data such as annotations? pdfs?
+/doc/ - stores documentation
+/inc/ - stores header files
+/src/ - stores source files
+/tests/ - stores test code
+
+-------------------------------------------------------------
+TODO:
+
+Plan out structure of application and development
+Create UML diagrams - use Modelio?
+Design GUI / environment
+Decide on coding conventions (one true brace?), directory structure etc.
+Begin with essential features such as pdf reading/annotating and sharing
+
+-------------------------------------------------------------
+Major Changes:
+
+23/05/2012: Repo created, README uploaded, possible directory structure uploaded, .gitignore created
